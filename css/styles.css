@@ -13,10 +13,14 @@
 
 html {
   font-size: 62.5%;
+  max-width: 1440px;
+  background-color: black;
+  margin: 0 auto;
 }
 
 body {
   font-family: Markazi Text;
+  background-color: white;
 }
 /* Sets font to 10 pixels. This makes it easy to work with REM. For example: if you want the font to be 21px, specify 2.1rem. for 16px, use 1.6 rem */
 /* for 100 pixels, set the size to 10rem and for 250 pixels, set the size to 2.5 rem */
@@ -111,7 +115,7 @@ nav ul li:active {
 }
 
 header {
-  margin: 5.6rem 0 5.6rem 0;
+  padding: 5.6rem 0 5.6rem 0;
   width: 100%;
   text-align: center;
 }
@@ -338,6 +342,7 @@ header {
   width: 100vw;
   gap: 40px;
   background-color: var(--text-white);
+  width: 100%;
 }
 
 .articles-all-cards {
