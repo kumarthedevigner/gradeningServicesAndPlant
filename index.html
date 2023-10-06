@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shrub Keepers</title>
+
+    <meta charset="UTF-8" />
+    <!-- FAV Icons -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png""> -->
+
+    <!-- Importing font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Playfair+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <!-- Always should be in the end in the head element -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Website name / logo  -->
+      <img
+        src="/images/logo_headerAndFooter.png"
+        alt="Logo Lucky Shrub"
+        id="logo"
+      />
+    </header>
+    <nav>
+      <!-- Website / Webapp navigation -->
+      <ul>
+        <li>Home</li>
+        <li>Plants</li>
+        <li>Articles</li>
+        <li>About</li>
+        <li class="cart-button">
+          Cart<img src="/images/shopping-cart.svg" alt="" />
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- HERO BANNER -->
+      <section class="hero-banner">
+        <div class="flex-container banner-text">
+          <h1 class="banner-h1">
+            We design, create and maintain landscapes, and sell plants
+          </h1>
+          <h2 class="banner-h2">
+            Transform any space into an oasis you can be proud of
+          </h2>
+          <h3 class="banner-h3">
+            Lorem ipsum dolor sit amet consectetur. Feugiat tincidunt amet
+            auctor integer morbi vel faucibus. Eget scelerisque pharetra morbi
+            aliquam lacus viverra. Malesuada tellus sit ut dui amet elementum
+            eget. Tellus quisque suscipit dui penatibus sit. Malesuada tellus
+            sit ut dui amet elementum eget. Tellus quisque suscipit dui
+            penatibus sit.
+          </h3>
+          <div class="banner-action-buttons">
+            <button class="banner-secondary-CTA">
+              Know More
+
+              <img src="images/arrow-right-green.svg" alt="" />
+            </button>
+            <button class="banner-primary-CTA">
+              Book a Visit
+              <img src="/images/arrow-right-white.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="flex-container banner-img">
+          <img src="images/banner.jpeg" alt="" />
+        </div>
+      </section>
+
+      <!-- PRODUCTS Section -->
+      <section class="plant-collection-section">
+        <div class="plant-collection-header">
+          <h1>Plant Collection</h1>
+          <div class="product-collection-filter-btns">
+            <button class="indoor-plants-btn">Indoor - 63 plants</button>
+            <button class="outdoor-plants-btn">Outdoor - 45 plants</button>
+          </div>
+        </div>
+        <!-- Product Cards -->
+        <div class="plant-collection-cards">
+          <!-- Product Card 1 -->
+          <article class="product-card">
+            <!-- Image -->
+            <div class="product-image">
+              <img src="images/indoor-plant-1.jpg" alt="" />
+            </div>
+
+            <div class="product-name-price-buttons">
+              <!-- Name and Price -->
+              <div class="product-name-price">
+                <h2>Pothos</h2>
+                <p>Epipremnum pinnatum</p>
+                <div class="price-per-pot">
+                  <h1>$ 41.32</h1>
+                  <p>per pot</p>
+                </div>
+              </div>
+
+              <!-- all buttons -->
+              <div class="product-buttons">
+                <!-- Qty Buttons -->
+                <div class="product-qty flex-align-center">
+                  <button><img src="images/minus-circle.svg" alt="" /></button>
+                  <p>1</p>
+                  <button><img src="images/minus-circle.svg" alt="" /></button>
+                </div>
+
+                <!-- Add to cart btn -->
+                <button class="add-to-cart-btn">
+                  Add to Cart<img src="images/add-to-cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Product Card 2 -->
+          <article class="product-card">
+            <!-- Image -->
+            <div class="product-image">
+              <img src="images/indoor-plant-2.jpg" alt="" />
+            </div>
+
+            <div class="product-name-price-buttons">
+              <!-- Name and Price -->
+              <div class="product-name-price">
+                <h2>Pothos</h2>
+                <p>Epipremnum pinnatum</p>
+                <div class="price-per-pot">
+                  <h1>$ 41.32</h1>
+                  <p>per pot</p>
+                </div>
+              </div>
+
+              <!-- all buttons -->
+              <div class="product-buttons">
+                <!-- Qty Buttons -->
+                <div class="product-qty flex-align-center">
+                  <button><img src="images/minus-circle.svg" alt="" /></button>
+                  <p>1</p>
+                  <button><img src="images/minus-circle.svg" alt="" /></button>
+                </div>
+
+                <!-- Add to cart btn -->
+                <button class="add-to-cart-btn">
+                  Add to Cart<img src="images/add-to-cart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button class="banner-primary-CTA show-all-plants">
+          Show all 63 plants <img src="/images/arrow-right-white.svg" alt="" />
+        </button>
+      </section>
+
+      <!-- ARTICLES -->
+      <section class="articles-section">
+        <h1>Articles</h1>
+        <div class="articles-all-cards">
+          <article class="article-card">
+            <div class="row row1">
+              <img src="images/article-1.png" alt="" />
+            </div>
+            <div class="row row2">
+              <h2>This is the header</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate fuga rerum aliquid officia, blanditiis perferendis
+                voluptatum adipisci accusantium deserunt? Nobis nisi et
+                repudiandae debitis minus quia quod ducimus error molestias.
+              </p>
+            </div>
+
+            <div class="row row3">
+              <div class="row3-author">
+                <img src="images/article-author-1.svg" class="profile" />
+                <p class="author-name">Jason Andrew</p>
+              </div>
+              <p class="time">6 min read</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div class="row row1">
+              <img src="images/article-2.png" alt="" />
+            </div>
+            <div class="row row2">
+              <h2>This is the header</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate fuga rerum aquia quod ducimus error molestias.
+              </p>
+            </div>
+
+            <div class="row row3">
+              <div class="row3-author">
+                <img src="images/article-author-2.svg" class="profile" />
+                <p class="author-name">Maria Lopez</p>
+              </div>
+              <p class="time">4 min read</p>
+            </div>
+          </article>
+          <article class="article-card">
+            <div class="row row1">
+              <img src="images/article-email.png" alt="" />
+            </div>
+            <div class="row row2">
+              <h2>This is the header</h2>
+              <div class="email-signup">
+                <input type="text" placeholder="Email" />
+                <button class="banner-primary-CTA show-all-plants">
+                  Signup
+                  <img src="/images/arrow-right-white.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="row row3">
+              <img src="images/logo_headerAndFooter.png" class="profile" />
+              <p class="time">30 secs</p>
+            </div>
+          </article>
+        </div>
+        <button class="banner-primary-CTA show-all-articles">
+          Show all 17 Articles<img src="/images/arrow-right-white.svg" alt="" />
+        </button>
+      </section>
+    </main>
+    <footer>
+      <!-- copyright and other footer content -->
+      <img src="images/logo_headerAndFooter.png" alt="" />
+      <p>© Copyright Lucky Shrubb</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

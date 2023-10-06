@@ -1,0 +1,452 @@
+:root {
+  --brand-main: #26877f;
+  --brand-light: #92c3bf;
+  --text-black: #052523;
+  --text-white: #e9f3f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Markazi Text;
+}
+/* Sets font to 10 pixels. This makes it easy to work with REM. For example: if you want the font to be 21px, specify 2.1rem. for 16px, use 1.6 rem */
+/* for 100 pixels, set the size to 10rem and for 250 pixels, set the size to 2.5 rem */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+}
+/* 48 pixels */
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+/* 30 pixel */
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+/* 22 pixel */
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+/* 18 pixels */
+
+nav {
+  background-color: var(--brand-main);
+}
+
+nav ul {
+  gap: 4rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+  border-radius: 3.2rem;
+  margin: 1.6rem 0rem 1.6rem 0rem;
+
+  border: 1px solid var(--brand-main);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li:nth-child(5) {
+  gap: 0.08rem;
+}
+
+nav ul li:nth-child(1) {
+  background-color: var(--text-white);
+  border: 1px solid var(--text-white);
+  color: #26877f;
+}
+
+nav ul li:hover {
+  border: 1px solid var(--text-white);
+  /* background-color: aliceblue;
+  color: #26877f; */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav ul li:active {
+  background-color: var(--text-white);
+  color: var(--brand-main);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#logo {
+  height: 14rem;
+}
+
+header {
+  margin: 5.6rem 0 5.6rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* BANNER */
+.hero-banner {
+  background-color: var(--text-white);
+  color: var(--text-black);
+  background-size: cover;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  max-height: auto;
+  overflow: hidden;
+}
+
+.flex-container {
+  flex: 1;
+  min-width: 50%;
+  max-width: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-text {
+  padding: 5.6rem 8rem 5.6rem 8rem;
+}
+
+.banner-img {
+  max-width: 100%;
+  max-height: 700px;
+}
+
+/* CTAs - Buttons */
+.banner-action-buttons {
+  display: flex;
+  align-items: flex-start;
+}
+
+.banner-secondary-CTA,
+.banner-primary-CTA {
+  padding: 0.8rem 2.4rem;
+  font-family: Markazi Text;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 0rem none;
+  border-radius: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.banner-primary-CTA {
+  background-color: var(--brand-main);
+  color: var(--text-white);
+}
+
+.banner-secondary-CTA {
+  margin-right: 1.6rem;
+  background-color: transparent;
+  border: 1px solid var(--brand-main);
+  color: var(--brand-main);
+}
+
+.banner-primary-CTA:hover,
+.banner-secondary-CTA:hover {
+  gap: 1.5rem;
+  padding-right: 1.7rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.banner-h1,
+.banner-h2,
+.banner-h3 {
+  margin-bottom: 2.4rem;
+}
+
+/* PLANT COLLECTION */
+
+.plant-collection-section {
+  padding: 5.6rem 8rem 5.6rem 8rem;
+}
+
+.plant-collection-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.product-collection-filter-btns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.4rem;
+}
+
+.indoor-plants-btn {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 3.2rem;
+  background-color: transparent;
+  color: var(--brand-light);
+  border: 1px solid var(--text-white);
+  font-family: Markazi Text;
+  font-size: 1.8rem;
+}
+
+.outdoor-plants-btn {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 3.2rem;
+  background-color: var(--text-white);
+  color: var(--brand-main);
+  border-style: none;
+  font-family: Markazi Text;
+  font-size: 1.8rem;
+}
+
+/* PRODUCT CARDS */
+.plant-collection-cards {
+  display: flex;
+  gap: 4rem;
+  max-height: 30rem;
+}
+
+.product-card {
+  display: flex;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--text-white);
+  width: 100%;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-name-price-buttons {
+  /* padding: 1rem; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #e9f3f2;
+  box-shadow: 0px -4px 20px 0px rgba(38, 135, 127, 0.3);
+}
+
+.product-name-price {
+  padding: 1.6rem;
+  background-color: var(--text-white);
+  flex: 1;
+}
+
+.price-per-pot {
+  display: flex;
+  gap: 1.6rem;
+  align-items: first baseline;
+  flex-wrap: wrap;
+}
+
+.product-buttons {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-qty {
+  gap: 1rem;
+}
+
+.product-qty button {
+  background-color: transparent;
+  border: none;
+}
+
+.add-to-cart-btn {
+  background-color: transparent;
+  border: 0.1rem solid var(--brand-main);
+  border-radius: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: Markazi Text;
+  font-size: 1.8rem;
+  color: var(--brand-main);
+}
+
+.show-all-plants {
+  margin-top: 4rem;
+}
+
+.blank {
+  height: 10px;
+  background-color: #26877f;
+}
+
+/* ARTICLES */
+
+.articles-section {
+  padding: 5.6rem 8rem 5.6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  gap: 40px;
+  background-color: var(--text-white);
+}
+
+.articles-all-cards {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row h2 {
+  margin-bottom: 16px;
+}
+
+.row img {
+  width: 100%;
+  height: 200px;
+
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.row:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.row2 {
+  padding: 20px;
+}
+
+.row3 {
+  border-top: 1px solid var(--brand-light);
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row3-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.time {
+  width: 90px;
+  text-align: right;
+}
+
+.row3 img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.email-signup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.email-signup button img {
+  height: auto;
+}
+
+.row2 input {
+  border: 1px solid #26877f;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: Markazi Text;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  flex: 1;
+  max-width: 80%;
+  min-width: 130px;
+  height: 38px;
+}
+
+.show-all-articles {
+  width: fit-content;
+  border: 0.1rem solid var(--brand-main);
+  border-radius: 3.2rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 5.6rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  height: 60px;
+}
